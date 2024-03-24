@@ -3,33 +3,143 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>FormReports</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <form id="form" class="form-contact" name="contacto-portafolio" action="https://formsubmit.co/greta.pereda@gmail.com" method="POST" enctype="multipart/form-data">
-        <input id="nombre" type="text" name="Sector" placeholder="sector" required>
-        <br>
-        <br>
-        <input id="email" type="email" name="email" placeholder="E-mail" required>
-        <br>
-        <br>
-        <input id="asunto" type="text" name="problema" placeholder="problema" required>
-        <br><br>
-        <input type="file" name="imagen" accept="image/png, image/jpeg, image/mp4">
-        <br><br>
-        <br><br>
-        <input type="hidden" name="_subject" value="Recorrido de Greta">
-        <br><br>
-        <textarea id="mensaje" cols="20" rows="4" name="observación" placeholder="Mensaje" required></textarea>
-        <br><br>
-        <input type="hidden" name="_cc" value="peredagreta@gmail.com">
-       
-        <div class="btn_form--contacto">
-            <input type="submit" value="enviar">
+    <div id="header">
+        <h1 id="title">
+          Reporte Dimax
+        </h1>
+        <p id="description">
+          Cargá tu observación!
+        </p>
+      </div>
+      
+      <main>
+        
+        <form id="survey-form" name="contacto-portafolio" action="https://formsubmit.co/greta.pereda@gmail.com" method="POST" enctype="multipart/form-data">
+          
+          <div id="form-group">
+            <label id="name-label">Nombre:</label>
+            <input type= "text" name="informa:" id="name" class="formcontrol" placeholder="tu nombre es..." required>
+          </div>
+          
+          <div id="form-group">
+            <label id="email-label">mail</label>
+            <input type= "email" name="email" id="email" class="formcontrol" placeholder="mail-ejemplo@mail.com" required>
+          </div>
+
+          <div id="form-group">
+            <label id="choose-rol">¿Cuál es el sector?</label>
+            
+            <select type= "dropdown" name="sector" id="dropdown" class="formcontrol" required>
+              <option disabled selected value> Seleccione una opción</option>
+              <option value="recepcion">Recepción</option>
+              <option value="envasado">envasado</option>
+              <option value="produccion">producción</option>
+              <option value="fritos">fritos</option>
+              <option value="masas frias">masas frias</option>
+            </select>
+          </div>
+          
+          <div id="form-group">
+            <label id="recommend">orden del sector</label>
+            
+            <div id="recommend-option">
+              <input name="orden-del-sector" type="radio" value="muy bueno" class="input-radio" checked>muy bueno
+            </div>
+            
+            <div id="recommend-option">
+              <input name="orden-del-sector" type="radio" value="bueno" class="input-radio">bueno
+            </div>
+            
+            <div id="recommend-option">
+              <input name="orden-del-sector" type="radio" value="regular" class="input-radio">regular
+            </div>
+          </div>
+          <div id="form-group">
+            <label id="recommend">Dispenser de agua</label>
+            
+            <div id="recommend-option">
+              <input name="Dispenser de agua" type="radio" value="casi-lleno" class="input-radio" checked>casi lleno
+            </div>
+            
+            <div id="recommend-option">
+              <input name="Dispenser de agua" type="radio" value="a-la-mitad" class="input-radio">a la mitad
+            </div>
+            
+            <div id="recommend-option">
+              <input name="Dispenser de agua" type="radio" value="medio-vacio" class="input-radio">medio vacio
+            </div>
+          </div>
+          
+          <div id="form-group">
+            
+            <label id="to-better">¿Qué aspectos debemos mejorar? <br>(elija todas las respuestas necesarias)</label>
+            
+            <div id="to-better-option">
+              <input name="Ropa de trabajo" type="checkbox" value="Ropa de trabajo" class="input-check-box">Ropa de trabajo
+            </div>
+            
+            <div id="to-better-option">
+              <input name="impecabilidad blanco ala" type="checkbox" value="impecabilidad blanco ala" class="input-check-box">impecabilidad blanco ala
+            </div>
+            
+            <div id="to-better-option">
+              <input name="barbijos bien colocados" type="checkbox" value="barbijos bien colocados" class="input-check-box">barbijos bien colocados
+            </div>
+            
+          </div>
+  
+          <div id="form-group">
+            <div class="image-description">
+              <label id="imagen1" class="image-name">imagen 1:</label>
+              <input type= "file" name="imagen1" id="name" class="formcontrol">
+            </div>
+            <input type= "text" name="texto imagen 1" id="texto-imagen-1" class="formcontrol" placeholder="notas imagen 1">
+          </div>
+
+          <div id="form-group">
+            <div class="image-description">
+              <label id="imagen1" class="image-name">imagen 2:</label>
+              <input type= "file" name="imagen2" id="name" class="formcontrol">
+            </div>
+            <input type= "text" name="texto imagen 2" id="texto-imagen-1" class="formcontrol" placeholder="notas imagen 1">
+          </div>
+
+          <div id="form-group">
+            <div class="image-description">
+              <label id="imagen1" class="image-name">imagen 3:</label>
+              <input type= "file" name="imagen2" id="name" class="formcontrol">
+            </div>
+            <input type= "text" name="texto imagen 3" id="texto-imagen-1" class="formcontrol" placeholder="notas imagen 1">
+          </div>
+
+          <div id="form-group">
+            <div class="image-description">
+              <label id="imagen1" class="image-name">imagen 4:</label>
+              <input type= "file" name="imagen2" id="name" class="formcontrol">
+            </div>
+            <input type= "text" name="texto imagen 4" id="texto-imagen-1" class="formcontrol" placeholder="notas imagen 1">
+          </div>
+
+          
+          <div id="form-group">
+            <label> Observaciones</label>
+            <textarea id="comment" cols="20" rows="4" name="observaciones" class="input-area" placeholder="escribe tus comentarios aquí..."></textarea>
+          </div>
+          <input type="hidden" name="_cc" value="peredagreta@gmail.com">
+          
+          <div id="form-group"> 
+            <button type="submit" id="submit" class="submit-button">Enviar</button>
             <input type="hidden" name="_template" value="table">
             <input type="hidden" name="_captcha" value="false">
-        </div>
-    </form>
+          
+          </div>
+          <p>Copyright © | RunnerTech &#x1F498</p>
+        </form>
+      </main>
     
 </body>
 </html>
