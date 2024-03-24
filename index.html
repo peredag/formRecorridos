@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="form" class="form-contact" name="contacto-portafolio" action="https://formsubmit.co/greta.pereda@gmail.com" method="POST" enctype="multipart/form-data">
+        <input id="nombre" type="text" name="Sector" placeholder="sector" required>
+        <br>
+        <br>
+        <input id="email" type="email" name="email" placeholder="E-mail" required>
+        <br>
+        <br>
+        <input id="asunto" type="text" name="problema" placeholder="problema" required>
+        <br><br>
+        <input type="file" name="imagen" accept="image/png, image/jpeg, image/mp4">
+        <br><br>
+        <br><br>
+        <input type="hidden" name="_subject" value="Recorrido de Greta">
+        <br><br>
+        <textarea id="mensaje" cols="20" rows="4" name="observación" placeholder="Mensaje" required></textarea>
+        <br><br>
+        <input type="hidden" name="_cc" value="peredagreta@gmail.com">
+       
+        <div class="btn_form--contacto">
+            <input type="submit" value="enviar">
+            <input type="hidden" name="_template" value="table">
+            <input type="hidden" name="_captcha" value="false">
+        </div>
+    </form>
+    
+</body>
+</html>
