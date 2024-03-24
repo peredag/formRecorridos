@@ -27,12 +27,16 @@ body{
     display:flex;
     position:auto;
     margin:30px;
+    padding: 10px;
     background-color:rgba(0,0,56,.8);
+    border-radius: 15px;
+    border: 1px solid rgb(40, 134, 134);;
   }
 
   form{
     margin: auto;
-    width: 95%;
+   /*  width: 95%; */
+   width: 90vw;
   }
   
   #form-group{
@@ -52,9 +56,11 @@ body{
   button{
     padding:10px;
     width:50%;
-    background-color:green;
+    background-color:rgb(40, 134, 134);
     color:white;
+    font-size: 20px;
     align-self:center;
+    border-radius: 15px;
   }
   
   .image-description, .image-name{
