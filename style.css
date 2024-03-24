@@ -36,19 +36,27 @@ body{
   form{
     margin: auto;
    /*  width: 95%; */
-   width: 90vw;
+   max-width: 90vw;
   }
   
   #form-group{
     display:flex;
+
     flex-direction:column;
     margin-bottom:20px;  
+    
   }
   label{
     margin-bottom:10px;
+    /* border: 1px solid red; */
   }
   input{
     /* padding:10px; */
+  }
+
+  .file{
+   /*  border: 1px solid red; */
+    align-items: flex-start;
   }
   select{
     /* padding:10px; */
@@ -64,7 +72,9 @@ body{
   }
   
   .image-description, .image-name{
-    display: flex;
+    /* display: flex; */
+    /* display:inline-flex */
+    
     width: 90%;
    /*  align-items: center; */
     justify-content:flex-start;
