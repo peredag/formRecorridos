@@ -47,7 +47,7 @@ body{
     
   }
   label{
-    margin-bottom:10px;
+   /*  margin-bottom:10px; */
     /* border: 1px solid red; */
   }
   input{
@@ -72,15 +72,15 @@ body{
   }
   
   .image-description, .image-name{
-    /* display: flex; */
-    /* display:inline-flex */
-    
+    display: flex;
     width: 90%;
-   /*  align-items: center; */
-    justify-content:flex-start;
-   /*  margin: auto; */
-    /* border: 1px solid red; */
+   /*  border: 1px solid red; */
   }
+
+  .image-name{
+    width: 45%;
+  }
+
   
   p{
     text-align: center;

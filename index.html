@@ -22,12 +22,17 @@
           
           <div id="form-group">
             <label id="name-label">Nombre:</label>
-            <input type= "text" name="informa:" id="name" class="formcontrol" placeholder="tu nombre es..." required>
+            <input type= "text" name="informa:" id="name" class="formcontrol" placeholder="tu nombre es..."><!-- required -->
+            <div class="anonimo">
+                <label id="anonimo">prefiero no decirlo</label>
+                <input type= "checkbox" name="anonimo" id="name" class="formcontrol">
+            </div>
+            
           </div>
           
           <div id="form-group">
             <label id="email-label">mail</label>
-            <input type= "email" name="email" id="email" class="formcontrol" placeholder="mail-ejemplo@mail.com" required>
+            <input type= "email" name="email" id="email" class="formcontrol" placeholder="mail-ejemplo@mail.com">
           </div>
 
           <div id="form-group">
@@ -63,7 +68,7 @@
             <label id="recommend">orden del sector</label>
             
             <div id="recommend-option">
-              <input name="orden-del-sector" type="radio" value="muy bueno" class="input-radio" checked>muy bueno
+              <input name="orden-del-sector" type="radio" value="muy bueno" class="input-radio">muy bueno
             </div>
             
             <div id="recommend-option">
@@ -78,7 +83,7 @@
             <label id="recommend">Dispenser de agua</label>
             
             <div id="recommend-option">
-              <input name="Dispenser de agua" type="radio" value="casi-lleno" class="input-radio" checked>casi lleno
+              <input name="Dispenser de agua" type="radio" value="casi-lleno" class="input-radio">casi lleno
             </div>
             
             <div id="recommend-option">
@@ -88,6 +93,9 @@
             <div id="recommend-option">
               <input name="Dispenser de agua" type="radio" value="medio-vacio" class="input-radio">medio vacio
             </div>
+            <div id="recommend-option">
+                <input name="Dispenser de agua" type="radio" value="no-hay" class="input-radio">no hay
+              </div>
           </div>
           
           <div id="form-group">
@@ -99,7 +107,7 @@
             </div>
             
             <div id="to-better-option">
-              <input name="impecabilidad blanco ala" type="checkbox" value="mejorar impecabilidad blanco ala" class="input-check-box">impecabilidad blanco ala
+              <input name="impecabilidad" type="checkbox" value="mejorar" class="input-check-box">impecabilidad
             </div>
             
             <div id="to-better-option">
@@ -108,45 +116,49 @@
             
           </div>
 
-          <div id="form-group">
-            <div class="image-description">
-              <label id="imagen1" class="image-name">imagen 1:</label>
-              <input type= "file" name="imagen1" id="name1" class="formcontrol file" >
+
+   
+            <div id="form-group">
+                <div class="image-description">
+                  <label id="imagen1" class="image-name">Foto 1 &#10140;</label>
+                  <input type= "file" name="imagen1" id="name1" class="formcontrol file" >
+                </div>
+                <input type= "text" name="texto imagen 1" id="texto-imagen-1" class="formcontrol" placeholder="notas imagen 1">
             </div>
-            <input type= "text" name="texto imagen 1" id="texto-imagen-1" class="formcontrol" placeholder="notas imagen 1">
-          </div>
+
+          
 
           <div id="form-group">
             <div class="image-description">
-              <label id="imagen2" class="image-name">imagen 2:</label>
+              <label id="imagen2" class="image-name">Foto 2 &#10140;</label>
               <input type= "file" name="imagen2" id="name2" class="formcontrol">
             </div>
             <input type= "text" name="texto imagen 2" id="texto-imagen-2" class="formcontrol" placeholder="notas imagen 2">
           </div>
           <div id="form-group">
             <div class="image-description">
-              <label id="imagen3" class="image-name">imagen 3:</label>
+              <label id="imagen3" class="image-name">Foto 3 &#10140;</label>
               <input type= "file" name="imagen3" id="name3" class="formcontrol">
             </div>
             <input type= "text" name="texto imagen 3" id="texto-imagen-3" class="formcontrol" placeholder="notas imagen 3">
           </div>
           <div id="form-group">
             <div class="image-description">
-              <label id="imagen4" class="image-name">imagen 4:</label>
+              <label id="imagen4" class="image-name">Foto 4 &#10140;</label>
               <input type= "file" name="imagen4" id="name3" class="formcontrol">
             </div>
             <input type= "text" name="texto imagen 4" id="texto-imagen-4" class="formcontrol" placeholder="notas imagen 4">
           </div>
           <div id="form-group">
             <div class="image-description">
-              <label id="imagen5" class="image-name">imagen 5:</label>
+              <label id="imagen5" class="image-name">Foto 5 &#10140;</label>
               <input type= "file" name="imagen5" id="name5" class="formcontrol">
             </div>
             <input type= "text" name="texto imagen 5" id="texto-imagen-5" class="formcontrol" placeholder="notas imagen 5">
           </div>
           <div id="form-group">
             <div class="image-description">
-              <label id="imagen6" class="image-name">imagen 6:</label>
+              <label id="imagen6" class="image-name">Foto 6 &#10140;</label>
               <input type= "file" name="imagen6" id="name6" class="formcontrol">
             </div>
             <input type= "text" name="texto imagen 6" id="texto-imagen-6" class="formcontrol" placeholder="notas imagen 6">
@@ -156,10 +168,10 @@
 
           
           <div id="form-group">
-            <label> Observaciones en gral:</label>
-            <textarea id="comment" cols="20" rows="6" name="observaciones" class="input-area" placeholder="escribe tus comentarios aquí..."></textarea>
+            <label> Observaciones:</label>
+            <textarea id="comment" cols="20" rows="6" name="observaciones :" class="input-area" placeholder="escribe tus comentarios aquí..."></textarea>
           </div>
-          <input type="hidden" name="_cc" value="peredagreta@gmail.com">
+          <input type="hidden" name="_cc" value="peredagreta@gmail.com,admin1@dimaxalimentos.com.ar">
           <input type="hidden" name="_subject" value="Tickets Greta!">
           
           
